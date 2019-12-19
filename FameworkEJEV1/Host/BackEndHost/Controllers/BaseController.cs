@@ -19,9 +19,10 @@ namespace BackEndHost.Controllers
         }
         [ActionName("testMethod")]
         [HttpGet]
-        public void TestMethod()
+        public string TestMethod()
         {
             dependacyInjector.GetInstance<IBaseService>("ServicesProvider").TestMethod();
+            return "Calling TestMethod succeded"; 
         }
     }
 }
