@@ -44,5 +44,19 @@
     <Compile Include="BusinessProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\DataAccessProvider\DataAccessProvider.csproj">
+      <Project>{DEBD665E-AF3B-4EF3-A6B0-DB20ED5247C4}</Project>
+      <Name>DataAccessProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DependacyInjection\DependacyInjector\DependacyInjector.csproj">
+      <Project>{df0d690c-58af-433c-8ffb-17e77341b88d}</Project>
+      <Name>DependacyInjector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Models\Models\Models.csproj">
+      <Project>{3956BBCA-484F-471D-A51C-584166759A23}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
